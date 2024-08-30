@@ -1,0 +1,208 @@
+@charset "ISO-8859-1";
+
+.home{
+	height: 100%;
+	margin:0;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	
+	background-image: url('Images/mainPageSunset.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment:fixed;
+}
+
+.name {
+	font-family:'Courier';
+	text-align: center;
+	margin:5px;
+}
+
+.btn{
+	padding: 10px;
+	font-family:'Courier';
+	font-weight:bold;
+	font-size:16px; 
+	width: 100%;
+	background: transparent;
+	backdrop-filter: blur(15px);
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.aHome{
+	width: 100%;
+}
+
+#secondbtn{
+	margin:5px;
+}
+
+.mainpage{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 34%;
+	justify-content:center;
+	align-items:center;
+	text-align: center;
+}
+
+.ulnav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;	
+}
+
+.navbar{
+	position: fixed;
+	background-color: #426b69;
+	top:0;
+	width:100%;
+	z-index:100;
+}
+
+.linav{
+	float:left;
+}
+
+.aNav{
+	display:block;
+	padding: 12px;
+	color: #d8e2dc;
+	text-decoration: none;
+	font-size: 18px;
+	
+}
+
+.aNav.Menu{
+	float:right;
+}
+
+.pers{
+	margin:0;
+	background-color: #d8e2dc;
+	
+
+}
+
+.topdivpers{
+	position: relative;
+	margin-top: 50px;
+	margin-left: 15px;
+	margin-right: 15px;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	transition: opacity 0.2s ease-out; /* Smooth transition for opacity change */
+	
+	
+}
+
+.imgPers{
+	max-width:100%;
+	max-height:100%;
+	border-style:solid;
+	border-width:2px;
+}
+
+.aboutMeImg{
+	float:left;
+	max-width: 50%;
+}
+
+.aboutme{
+	max-width:100%;
+	margin: 20px;
+	text-align: center;
+}
+
+.aboutmeText{
+	font-size: 18px;
+}
+
+.edu{
+	margin: 10px;
+	transition: opacity 0.2s ease-out;
+	
+}
+
+
+.content{
+	text-align: center;
+	font-size: 40px;
+	margin-top: 150px;
+	margin-bottom:5px;
+}
+
+.aboutmeText.margin{
+	margin: 10px 5px;
+}
+
+.HobbiesInfo{
+	margin: 10px;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
+
+.hobbiesimg{
+	float:right;
+	max-width: 50%;
+}
+
+.aboutme.hobbies{
+	float:left;
+}
+
+.aNav:hover{
+	color: #353839;
+	cursor: pointer;
+}
+
+.eduFiles{
+	max-width: 30%;
+	height: 300px;
+	flex:1;
+	padding: 10px;
+}
+.eduRow{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height: 100%;
+}
+iframe.eduFiles{
+	border:none;
+}
+
+.uofuP{
+clear: both;
+font-size: 18px;
+margin: 10px 5px;
+}
+
+.hobbies2{
+	font-size: 18px;
+	text-align: center;
+	margin: 15px;
+}
+
+#socials {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 100%;
+}
+
+.aNav.links{
+	background-color: #426b69;
+	border-style:solid;
+	border-width:1px;
+	border-color: black;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+}
