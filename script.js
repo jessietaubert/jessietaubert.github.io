@@ -27,18 +27,31 @@ function socials_dropdown(){
 	}
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-	const imageCarousel = document.querySelector('.imgCarousel');
-	const nextBtn = document.querySelector('.nextButton');
-	const prevBtn = document.querySelector('.prevButton');
+document.addEventListener("DOMContentLoaded", function () {
+	let carousel = document.querySelector(".carousel");
+	let items = carousel.querySelectorAll(".item");
   
-	nextBtn.addEventListener("click", () => {
-	  const slideWidth = imageCarousel.clientWidth;
-	  imageCarousel.scrollLeft += slideWidth;
+	function showItem(index) {
+	  items.forEach((item, idx) => {
+		item.classList.remove("active");
+		if (idx === index) {
+		  item.classList.add("active");
+		}
+	  });
+	}
+  
+	document.querySelector(".prev").addEventListener("click", () => {
+	  let index = [...items].findIndex((item) =>
+		item.classList.contains("active")
+	  );
+	  showItem((index - 1 + items.length) % items.length);
 	});
   
-	prevBtn.addEventListener("click", () => {
-	  const slideWidth = imageCarousel.clientWidth;
-	  imageCarousel.scrollLeft -= slideWidth;
+	document.querySelector(".next").addEventListener("click", () => {
+	  let index = [...items].findIndex((item) =>
+		item.classList.contains("active")
+	  );
+	  showItem((index + 1) % items.length);
 	});
+  
   });

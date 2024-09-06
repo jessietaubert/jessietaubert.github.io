@@ -213,63 +213,78 @@ margin: 10px 5px;
 	font-size: 16px;
 }
 
-.imgCarousel{
-  position: relative;
-  margin: 0 auto;
-  overflow: hidden;
-  width: 80vw;
-  height: 80vh;
-}
-
-.imgCarousel::-webkit-scrollbar{
-	display: none;
-}
-
-.carouselContent{
+/*
+	Caved and used a template, inspiration from https://codepen.io/luxonauta/pen/QWEWvmB
+*/
+.carousel-container {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 20px;
 	position: relative;
-    left: 50%;
-    top: 50%;
-    width: 70%;
-    height: 60%;
-    transform: translate(-50%, -50%);
-	scroll-behavior: smooth;
-}
-
-.imgCard{
-	position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.imgThumbnail{
-	position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    
-}
-
-.prevButton, .nextButton{
-	border: none;
-	width: 10vw;
-	height: 100%;
-	position: absolute;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #d8e2dc 100%);
-	cursor: pointer;
-	z-index: 9;
-}
+	flex-direction: column;
+  
+	.carousel {
+	  aspect-ratio: 16/9;
+	  width: 100%;
+	  position: relative;
+	  overflow: hidden;
 
-.prevButton{
-	left:0;
-}
-
-.nextButton{
-	right:0;
+  
+	  .item {
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		display: none;
+		transition: opacity 0.5s ease-in-out;
+  
+		img {
+		  width: 100%;
+		  height: 100%;
+		  object-fit: cover;
+		  object-position: center;
+		}
+  
+		&.active {
+		  opacity: 1;
+		  display: block;
+		}
+	  }
+	}
+  
+	.btn {
+	  padding: 1vw 1.5vh;
+	  position: absolute;
+	  transform: translateY(-50%);
+	  top: 50%;
+	  outline: none;
+	  border: none;
+	  cursor: pointer;
+	  text-transform: uppercase;
+	  font-size: 12px;
+	  font-weight: 900;
+	  color: #10100e;
+	  background-color: #ffffe6;
+	  transition: transform 0.2s ease-in-out;
+	  width: 20px;
+	  text-align: start;
+  
+	  &:active,
+	  &:focus {
+		transform: translateY(-50%) scale(0.9);
+	  }
+  
+	  &:hover {
+		transform: translateY(-50%) scale(0.96);
+	  }
+	}
+  
+	.prev {
+	  left: -5%;
+	}
+  
+	.next {
+	  right: -5%;
+	}
 }
 
