@@ -26,3 +26,19 @@ function socials_dropdown(){
 		dropdown.style.display = "none";
 	}
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+	const imageCarousel = document.querySelector('.imgCarousel');
+	const nextBtn = document.querySelector('.nextButton');
+	const prevBtn = document.querySelector('.prevButton');
+  
+	nextBtn.addEventListener("click", () => {
+	  const slideWidth = imageCarousel.clientWidth;
+	  imageCarousel.scrollLeft += slideWidth;
+	});
+  
+	prevBtn.addEventListener("click", () => {
+	  const slideWidth = imageCarousel.clientWidth;
+	  imageCarousel.scrollLeft -= slideWidth;
+	});
+  });
