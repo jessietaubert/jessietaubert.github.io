@@ -152,12 +152,20 @@
 }
 
 .hobbiesimg{
-	float:right;
 	max-width: 50%;
+	height: 100%;
+	display: flex;
 }
 
-.aboutme.hobbies{
-	float:left;
+.hobbiesimg img {
+	max-height: 500px;
+    width: 100%;
+    height: auto; 
+    object-fit: contain;
+}
+
+.aboutme.hobbies {
+    flex: 1;
 }
 
 .aNav:hover{
