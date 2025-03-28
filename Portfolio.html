@@ -32,9 +32,9 @@
 		<div class = "portfolio-blurbs">
 			<h1 id="skills" class="portfolio-header"> Skills </h1>
 			<p> Languages: <br><br>
-				C &emsp; C# &emsp; C++ (and Qt) &emsp; Java &emsp; SQL &emsp; Python &emsp; JavaScript (with d3, React Native, Node.js) &emsp; HTML &emsp; CSS &emsp;  R &emsp; Verilog &emsp; MATLAB &emsp; Dart </p>
+				C &emsp; C++ (and Qt) &emsp;  C# &emsp; Java &emsp; SQL (Postgre & Oracle) &emsp; NoSQL (MongoDB) &emsp; Python &emsp; JavaScript (with d3, React Native, Node.js) &emsp; HTML &emsp; CSS &emsp; R &emsp; Verilog &emsp; MATLAB &emsp; Dart </p>
 			<p> Tools: <br><br>
-				Docker &emsp; AWS &emsp; GitHub & GitLab </p>
+				Docker &emsp; AWS &emsp; GitHub & GitLab &emsp; CI/CD Pipelines (GitLab)</p>
 			<p> <br> I consider myself to have a strong foundation in collaborative problem solving and communication from my work experience and education.
 				 I enjoy computer science for the logic aspects and challenge of creating unique, efficient solutions to seemingly simple problems! I also love how there is always something to new learn.</p>
 			<p><br> While exploring the computer science field, I have found myself diving into the niches of data science and machine learning, as well as electrical and computer engineering.</p>
@@ -47,6 +47,28 @@
 				Structures & Algorithms &emsp; Models of Computation &emsp; Linear Algebra &emsp; Discrete Structures &emsp; Vector Calculus for Engineers  &emsp; Software Practice I & II</p>
 			<p> <br> At Worcester Polytechnic Institute I have studied: <br><br> Database Systems &emsp; Digital Circuit Design &emsp; Introduction to Electrical and Computer Engineering &emsp; Calculus I, II, III, & IV</p>
 			<p> <br> At Lady Margaret Hall in Oxford I have studied: <br><br> Artificial Intelligence & Machine Learning: Theory & Practice</p>
+		</div>
+
+		<div class = "portfolio-blurbs">
+			<h1 id="projects" class="portfolio-header"> Climbing Grade Prediction Project </h1>
+			<p> 
+				This project aims to predict climbing grades based on certain metrics! 
+				I dived into more technical machine learning models, testing out regression and classification, 
+				but I found regression to better model the data. I collected all of the data via a google form 
+				since there is not much publicly accessible climbing data out there, and this resulted in a fairly small dataset.
+				 Ultimately, the biggest challenge I faced was avoiding overfitting the models - leading me to scrapping a custom neural network and the classification models.
+				 However, I found the regression models to be accurate (~87-91%) and explain the variance of the data strongly! 
+				I also learned new technologies like Flask and AWS in order to deploy the web page. It was a great experience to apply the knowledge 
+				I've learned in my classes and combine it with a sport I am passionate about! </p>
+				<p> I decided to stop the server to not exceed AWS free tier due to the low scope of the project, so below you can watch a sample flow of the interface and a prediction be generated!</p>
+				<video controls>
+					<source src = "Documents/ml_demo.MOV" type="video/mp4">
+				</video>
+				
+				<a class = "analysis-button" href="analysis.html">
+					<button class = "btn" type = "button"> View Project Analysis</button>
+				</a>
+
 		</div>
 
 		<div class = "portfolio-blurbs">
