@@ -432,3 +432,20 @@ video{
         grid-template-columns: 1fr;
     }
 }
+
+.project-video {
+    width: 100%;
+    max-width: 850px;
+
+    max-height: 500px;
+
+    display: block;
+
+    margin: 1.5rem auto;
+
+    border-radius: 14px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+    object-fit: contain;
+}

@@ -69,7 +69,7 @@
 					I've learned in my classes and combine it with a sport I am passionate about! </p>
 			</div>
 			<div class="poster-container">
-                <video class="project-poster" controls>
+                <video class="project-video" controls>
                     <source src="Documents/ml_demo.MOV" type="video/mp4">
                 </video>
             </div>
@@ -82,19 +82,29 @@
 		<!-- C++ & Qt Projects -->
 		<div class = "portfolio-blurbs">
 			<h1 class="portfolio-header"> C++ & Qt Projects </h1>
-			<h2> Color Mixing Game </h2>
-			<p> Collaborated in a team to develop a color mixing game with three levels. Each level has three stages, with four swatches to match. There is a bit of an error tolerance based on the euclidean distance in color space, 
-				as well as an API call to name each color in the cauldron. Box2D was used to add interactivity to the game.</p>
-				<video controls>
-					<source src = "Documents/colorAlchemy.mp4" type="video/mp4">
-				</video>
-			<h2> Sprite Editor </h2>
-			<p> Created a sprite editor using Qt. This invovled allowing a user to select different brush colors, brush sizes, canvas sizes, 
-				as well as an animation preview with the ability to change the animation speed. The user is able to click on different frames, make new frames, and use the onion skin feature to reference other frames. The user can also save as a JSON file and load previous sprite projects in.</p>
-			<h2> Simon Game </h2>
-			<p> Recreated the Simon memory game using Qt. Involved timer structure and signal/slot architecture as well as game logic.</p>
-			<h2> Wavy Text Generator </h2>
-			<p> Simple wavy text generation using Haru library. </p>
+			<div class="project-card" style="width:100%; box-shadow:none; margin:0; padding:0;">
+                <h4>Color Mixing Game</h4>
+                <p>Collaborated on a color mixing game with three levels, error tolerance via euclidean distance in color space, API color naming, and Box2D for interactivity.</p>
+                <div class="poster-container">
+                    <video class="project-poster" controls>
+                        <source src="Documents/colorAlchemy.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="project-card" style="width:100%; box-shadow:none; margin:0; padding:0;">
+                <h4>Sprite Editor</h4>
+                <p>Sprite editor built with Qt supporting brush colors/sizes, animation preview, onion-skin, JSON save/load.</p>
+            </div>
+
+            <div class="project-card" style="width:100%; box-shadow:none; margin:0; padding:0;">
+                <h4>Simon Game</h4>
+				<p>Recreated the classic Simon memory game using Qt signals/slots and timers.</p>
+            </div>
+			 <div class="project-card" style="width:100%; box-shadow:none; margin:0; padding:0;">
+                <h4>Wavy Text Generator</h4>
+                <p>Wavy text generation using Haru library.</p>
+            </div>
 		</div>
 
 		<div class = "portfolio-blurbs">
